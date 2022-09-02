@@ -1,0 +1,10 @@
+:root {
+    --color1: #4D2319;
+    --color2: #7A4C1A;
+    --color3: #FCFCE3;
+    --color4: #A2D46B;
+    --color5: #332824;
+}
+.nav > a:first-child {
+    background-color: var(--color4);
+}
