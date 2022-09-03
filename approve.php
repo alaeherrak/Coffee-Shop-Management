@@ -12,5 +12,6 @@ if ($_GET['approve'] == 'ok' || $_GET['approve'] == 'no') {
         $stmt = $db->prepare('UPDATE contract SET contrat_status=? WHERE id_contrat=?');
         $stmt->execute(['no', $_GET['id']]);
     }
-    header('Location: ./home.php?oa=approve');
+    if ($_SESSION['privilage'] == 'owner') header('Location: ./home.php?oa=approve');
+    else header('Location: ./home.php');
 }
