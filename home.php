@@ -1,7 +1,7 @@
 <?php
 session_start();
-require './db.php';
 if (!isset($_SESSION['username']) || !isset($_SESSION['cafe_name'])) header('Location: ./login.php');
+require './db.php';
 if ($_SESSION['privilage'] == 'waiter') {
     $stmt = $db->prepare('SELECT * FROM contract WHERE contrat_username=?');
     $stmt->execute([$_SESSION['username']]);

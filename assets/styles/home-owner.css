@@ -28,3 +28,40 @@
     color: var(--color3);
     padding: 7px 10px;
 }
+.owner-approve {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+.owner-approve-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.approve-list-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.approve-list-column {
+    border: 1px solid black;
+    width: 250px;
+    text-align: center;
+    padding: 20px 20px;
+}
+.approve-list-column > a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.approve-list-column > a:first-child {
+    background-color: rgb(0, 140, 255);
+}
+.approve-list-column > a:last-child {
+    background-color: rgb(255, 30, 0);
+}
