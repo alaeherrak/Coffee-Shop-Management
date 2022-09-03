@@ -1,5 +1,6 @@
 <?php
 session_start();
+if (isset($_SESSION['username']) && isset($_SESSION['privilage']) && isset($_SESSION['cafe_name'])) header('Location: ./home.php');
 require './db.php';
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
