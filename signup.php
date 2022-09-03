@@ -27,7 +27,10 @@ if (isset($_POST['signupO'])) {
                         $stmt = $db->prepare('INSERT INTO cafe (owner, cafe_name) VALUES (?,?)');
                         $flag =  $stmt->execute([$username, $cafeName]);
                         if ($flag) {
-                            //traitement ici
+                            $_SESSION['username'] = $username;
+                            $_SESSION['privilage'] = 'owner';
+                            $_SESSION['cafe_name'] = $cafeName;
+                            header('Location: ./home.php');
                         } else {
                             $error = 'An error has occured.';
                         }
@@ -66,7 +69,10 @@ if (isset($_POST['signupW'])) {
                     $stmt = $db->prepare('INSERT INTO contract (contrat_username, contrat_cafe, contrat_status) VALUES (?,?,?)');
                     $flag =  $stmt->execute([$username, $cafeName, 'ko']);
                     if ($flag) {
-                        //traitement ici
+                        $_SESSION['username'] = $username;
+                        $_SESSION['privilage'] = 'waiter';
+                        $_SESSION['cafe_name'] = $cafeName;
+                        header('Location: ./home.php');
                     } else {
                         $errorW = 'An error has occured.';
                     }

@@ -9,22 +9,6 @@
     background-color: var(--color4);
 }
 
-.section {
-    height: 88vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 30px;
-}
-.container {
-    width: 60%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(243, 243, 243);
-    border-radius: 10px;
-    overflow: hidden;
-}
 .toggle {
     width: 100%;
     display: flex;
@@ -45,29 +29,4 @@
 .current {
     background-color: var(--color5);
     color: var(--color3);
-}
-.form-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 20px;
-    gap: 15px;
-}
-.form-container > label {
-    font-size: 18px;
-}
-.form-container > input, select {
-    font-size: 18px;
-    height: 40px;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-.form-container > input[type='submit'] {
-    background-color: var(--color2);
-    color: var(--color3);
-    border-color: var(--color2);
-    cursor: pointer;
-    margin-top: 15px;
-}
-.form-container > input[type='submit']:hover {
-    opacity: 0.9;
 }
