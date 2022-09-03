@@ -1,0 +1,30 @@
+:root {
+    --color1: #4D2319;
+    --color2: #7A4C1A;
+    --color3: #FCFCE3;
+    --color4: #A2D46B;
+    --color5: #332824;
+}
+
+.owner-nav {
+    height: 5vh;
+    background-color: var(--color4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+}
+.owner-nav > div {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owner-nav > div > a {
+    text-decoration: none;
+    background-color: var(--color2);
+    color: var(--color3);
+    padding: 7px 10px;
+}

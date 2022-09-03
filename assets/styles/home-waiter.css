@@ -1,0 +1,18 @@
+:root {
+    --color1: #4D2319;
+    --color2: #7A4C1A;
+    --color3: #FCFCE3;
+    --color4: #A2D46B;
+    --color5: #332824;
+}
+
+.waiter-container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.status-ko {
+    font-size: 30px;
+    font-style: italic;
+}
